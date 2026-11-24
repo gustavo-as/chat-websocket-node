@@ -1,6 +1,6 @@
 {
   "name": "chat-websocket-node",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Chat em tempo real com Node.js, Express e WebSockets, com histórico persistido em JSON.",
   "main": "server.js",
   "scripts": {
