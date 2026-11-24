@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat em Tempo Real</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de entrada -->
+  <section id="login" class="login">
+    <form id="login-form" class="card">
+      <h1>Chat em Tempo Real</h1>
+      <p>Escolha um nome para entrar na conversa.</p>
+      <input id="username" type="text" maxlength="30" placeholder="Seu nome" autocomplete="off" required autofocus>
+      <button type="submit">Entrar</button>
+      <p id="login-error" class="error" role="alert"></p>
+    </form>
+  </section>
+
+  <!-- Tela do chat -->
+  <main id="chat" class="chat hidden">
+    <header class="chat-header">
+      <h1>Chat em Tempo Real</h1>
+      <span id="status" class="status">conectando...</span>
+    </header>
+
+    <div class="chat-body">
+      <aside class="users">
+        <h2>Online (<span id="user-count">0</span>)</h2>
+        <ul id="user-list"></ul>
+      </aside>
+
+      <section class="conversation">
+        <ul id="messages" class="messages" aria-live="polite"></ul>
+        <p id="typing" class="typing"></p>
+        <form id="message-form" class="message-form">
+          <input id="message-input" type="text" maxlength="1000" placeholder="Digite sua mensagem..." autocomplete="off">
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
