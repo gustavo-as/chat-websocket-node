@@ -1,0 +1,26 @@
+{
+  "name": "chat-websocket-node",
+  "version": "0.1.0",
+  "description": "Chat em tempo real com Node.js, Express e WebSockets, com histórico persistido em JSON.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "chat",
+    "websocket",
+    "nodejs",
+    "express",
+    "ws"
+  ],
+  "author": "gustavo-as",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "ws": "^8.23.0"
+  }
+}
